@@ -23,6 +23,18 @@ app.post("/", (req, res) => {
   res.status(205).json(response);
 });
 
+app.post("/about", (req, res) => {
+  const { dob, username, name } = req.body;
+  const registration = `${dob.split("-")[0]}${dob.split("-")[1]}${
+    dob.split("-")[2]
+  }${username}`;
+  const response = {
+    success: true,
+    welcome_meessage: `welcome to about page ${name}, your registration number is ${registration}`,
+  };
+  res.status(201).json(response);
+});
+
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });

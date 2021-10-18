@@ -1,8 +1,10 @@
 const express = require("express");
 const app = express();
+const ConnectDb = require("./connectdb");
 
 app.use(express.json());
 const port = process.env.PORT || 5000;
+ConnectDb();
 
 app.get("/", (req, res) => {
   res.status(200).send("<h5>This is home page</h5>");

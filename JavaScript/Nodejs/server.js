@@ -14,6 +14,14 @@ app.get("/about", (req, res) => {
   res.status(201).send("<h3>This is about page</h3>");
 });
 
+app.get("/contact", (req, res) => {
+  res
+    .status(205)
+    .send(
+      "<h4>If you want to contact me then mail me on <a href>nisha123@gmail.com</a></h4>"
+    );
+});
+
 app.post("/", (req, res) => {
   // const name = req.body.name;
   // const address = req.body.address;

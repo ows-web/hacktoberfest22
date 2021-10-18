@@ -9,7 +9,7 @@ Hacktoberfest
 ## How to make your first pull request?
 
 ### Step#1: Star this repo 🌟
-<img width="100%" alt="Star this repo for hacktoberfest" src="https://github.com/SonuKumar81800/Hacktoberfest2021/blob/main/Star.png">
+<img width="100%" alt="Star this repo for hacktoberfest" src="https://github.com/SonuKumar81800/Hacktoberfest21/blob/main/Star.png">
 
 ### Step#2: Show some love 😄 
 <a href="https://github.com/SonuKumar81800" aria-label="Follow @SonuKumar81800 on GitHub"><img  src="https://img.shields.io/badge/Follow👉-@SonuKumar81800-blue?style=for-the-badge"  />

@@ -23,11 +23,7 @@ app.get("/contact", (req, res) => {
 });
 
 app.post("/", (req, res) => {
-  // const name = req.body.name;
-  // const address = req.body.address;
-  // const number = req.body.number;
-
-  const { name, address, number } = req.body;
+  const { name, address, number, email } = req.body;
   const username = `${name.split(" ")[0]}${number}`;
 
   const response = {

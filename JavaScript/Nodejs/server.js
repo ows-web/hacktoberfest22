@@ -49,6 +49,16 @@ app.post("/about", (req, res) => {
   res.status(201).json(response);
 });
 
+app.post("/contact", (req, res) => {
+  const { name, dob, number, feedback } = req.body;
+
+  const response = {
+    success: true,
+    welcome_message: "welcome to contact page",
+  };
+  res.status(205).json(response);
+});
+
 app.listen(port, () => {
   console.log(`Server is running on http://localhost:${port}`);
 });

@@ -10,6 +10,10 @@ app.get("/", (req, res) => {
   res.status(200).send("<h5>This is home page</h5>");
 });
 
+app.get("/about", (req, res) => {
+  res.status(201).send("<h3>This is about page</h3>");
+});
+
 app.post("/", (req, res) => {
   // const name = req.body.name;
   // const address = req.body.address;

@@ -1,4 +1,4 @@
-# Hacktoberfest2021
+# Hacktoberfest2022
 Hacktoberfest
 
 <img alt="HF2022" src="./hacktoberfest.png">

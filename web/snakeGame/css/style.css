@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Dongle&family=New+Tegomin&family=Poppins:wght@300;400;500;600&family=Roboto&display=swap');
+
+*{
+    padding: 0%;
+    margin: 0%;
+    font-family: 'New Tegomin', serif;
+}
+
+.body{
+    background: url('../img/bg.jpg');
+    min-height: 100vh;
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#board{
+    width: 90vmin;
+    height: 92vmin;
+    border: 4px solid black;
+    background: linear-gradient(rgb(190, 233, 190), rgb(237, 237, 190));
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-template-rows: repeat(18, 1fr);
+}
+
+#score{
+    position: absolute;
+    top: 9px;
+    right: 200px;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+#hiScore{
+    position: absolute;
+    top: 100px;
+    right: 200px;
+    font-weight: bold;
+    font-size: 40px;
+}
+
+.head{
+    background: linear-gradient(red, yellow);
+    border: 3px solid purple;
+    border-radius: 8px;
+    transform: scale(1.02);
+}
+
+.snakeBody{
+    background: purple;
+    border: .25vmin solid white;
+    border-radius: 12px;
+}
+
+.food{
+    background: linear-gradient(red, purple);
+    border: .5vmin solid black;
+    border-radius: 8px;
+}

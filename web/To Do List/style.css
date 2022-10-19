@@ -1,0 +1,296 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    background-color: #343638;
+}
+
+#navbar {
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    align-items: center;
+}
+
+#logo {
+    display: flex;
+    margin: 8px 15px;
+    align-items: center;
+}
+
+#logo img {
+    padding: 3px;
+    height: 40px;
+    width: 40px;
+}
+
+#logo span {
+    padding: 3px;
+    font-family: 'Lobster', cursive, Arial;
+    color: darkorange;
+}
+
+#search {
+    margin-top: 8px;
+    margin-bottom: 8px;
+    margin-right: 20px;
+}
+
+#search input {
+    border-radius: 5px;
+    padding: 5px;
+    background-color: whitesmoke;
+    border: 1px solid gray;
+}
+
+#search input:hover {
+    border: 3px solid darkorange;
+}
+
+section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background: #343638 no-repeat center center/cover;
+}
+
+#mainBox {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    width: 50%;
+    margin: 10px;
+}
+
+h1 {
+    padding: 20px;
+    font-family: 'Lobster', cursive, Arial;
+    color: darkorange;
+}
+
+#time {
+    margin-bottom: 10px;
+    font-family: 'Lobster', cursive, Arial;
+    color: darkorange;
+}
+
+#container {
+    display: flex;
+    flex-direction: column;
+    border: 2px solid #343536;
+    margin: 10px;
+    padding: 15px;
+    align-items: center;
+    border-radius: 25px;
+    box-shadow: 5px 5px 3px 4px black;
+}
+
+#container img {
+    height: 140px;
+}
+
+h2 {
+    padding: 7px;
+    font-family: 'Lobster', cursive, Arial;
+    color: darkorange;
+}
+
+#num {
+    font-family: 'Lobster', cursive, Arial;
+    color: darkorange;
+}
+
+#inputBox {
+    padding: 8px;
+    display: flex;
+    align-items: center;
+}
+
+#inputTask {
+    padding: 6px;
+    border-radius: 8px;
+    border: 1px solid gray;
+}
+
+#addTask {
+    padding: 10px;
+    border-radius: 12px;
+    background-color: darkorange;
+    border: darkorange;
+    box-shadow: 2px 2px 2px 1px black;
+    color: black;
+    font-weight: bold;
+    margin: 4px;
+    cursor: pointer;
+}
+
+#addTask:hover {
+    background-color: rgb(255, 206, 116);
+}
+
+#addTask:active {
+    background-color: orange;
+}
+
+#myTasks {
+    padding: 8px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-family: 'Lobster', cursive, Arial;
+    color: darkorange;
+}
+
+.taskBox {
+    margin: 5px;
+    display: flex;
+    align-items: center;
+    border-radius: 10px;
+    padding: 5px;
+    background-color: rgb(92 96 88);
+}
+
+.taskBox h4 {
+    padding: 4px;
+    align-items: center;
+    text-align: center;
+}
+
+.taskBox p {
+    padding: 4px;
+    border: 1px solid gray;
+    border-radius: 5px;
+    margin: 0px 8px;
+    background-color: white;
+    color: black;
+}
+
+.taskBox button {
+    padding: 10px;
+    border-radius: 12px;
+    background-color: darkorange;
+    border: darkorange;
+    box-shadow: 2px 2px 2px 1px black;
+    color: black;
+    font-weight: bold;
+    margin: 4px;
+    cursor: pointer;
+}
+
+.taskBox button:hover {
+    background-color: rgb(255, 206, 116);
+}
+
+.taskBox button:active {
+    background-color: orange;
+}
+
+#bookmarkBtn {
+    padding: 10px;
+    border-radius: 12px;
+    background-color: darkblue;
+    border: darkblue;
+    box-shadow: 2px 2px 2px 1px black;
+    color: white;
+    font-weight: bold;
+    margin: 4px;
+    cursor: pointer;
+}
+
+#bookmarkBtn:hover {
+    background-color: rgb(32, 86, 201);
+}
+
+#bookmarkBtn:active {
+    background-color: rgb(1, 74, 163);
+}
+
+#lastEle {
+    display: flex;
+}
+
+#sortList {
+    padding: 10px;
+    border-radius: 12px;
+    background-color: darkorange;
+    border: darkorange;
+    box-shadow: 2px 2px 2px 1px black;
+    color: black;
+    font-weight: bold;
+    margin: 4px;
+    cursor: pointer;
+}
+
+#sortList:hover {
+    background-color: rgb(255, 206, 116);
+}
+
+#sortList:active {
+    background-color: orange;
+}
+
+#delAll {
+    padding: 10px;
+    border-radius: 12px;
+    background-color: darkorange;
+    border: darkorange;
+    box-shadow: 2px 2px 2px 1px black;
+    color: black;
+    font-weight: bold;
+    margin: 4px;
+    cursor: pointer;
+}
+
+#delAll:hover {
+    background-color: rgb(255, 206, 116);
+}
+
+#delAll:active {
+    background-color: orange;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: 'Lobster', cursive, Arial;
+    color: darkorange;
+    margin: 40px;
+}
+
+#social {
+    display: flex;
+    align-items: center;
+}
+
+#social a {
+    margin: 0px 10px;
+}
+
+#social a:hover {
+    margin-bottom: 10px;
+}
+
+#social img {
+    height: 40px;
+    width: 40px;
+    border-radius: 15px;
+}
+
+@media(max-width:820px) {
+    #logo img {
+        height: 30px;
+        width: 30px;
+    }
+
+    footer {
+        flex-direction: column;
+    }
+
+    #copy {
+        text-align: center;
+    }
+}

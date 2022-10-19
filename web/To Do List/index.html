@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Schedule Manager</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="logo.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+
+<body>
+    <div id="navbar">
+        <div id="logo">
+            <img src="logo.png" alt="logo">
+            <span>Schedule Manager</span>
+        </div>
+        <div id="search">
+            <input type="text" id="findTxt" placeholder="Search your note here">
+        </div>
+    </div>
+    <section>
+        <div id="mainBox">
+            <h1>Welcome To Schedule Manager</h1>
+            <span id="time"></span>
+            <div id="container">
+                <img src="clipboard.png" alt="">
+                <h2>Schedule Your Tasks Here</h2>
+                <div id="inputBox">
+                    <textarea id="inputTask" placeholder="Enter your tasks" rows="1"></textarea>
+                    <button id="addTask" onclick="addition()">Add Task</button>
+                </div>
+                <h2>Your Tasks</h2>
+                <div id="num">Total Tasks are <span id="arrLen"></span></div>
+                <div id="myTasks"></div>
+                <div id="lastEle">
+                    <button id="delAll" onclick="delAll()">Remove All</button>
+                    <button id="sortList" onclick="sorting()">Sort</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div id="social">
+            <a href="https://github.com/Souvik-Bhattacharya" target="_blank" rel="noopener noreferrer"><img
+                    src="github.png" alt="GitHub"></a>
+            <a href="mailto:souvikbh12@gmail.com"><img src="mail.png" alt="Mail"></a>
+        </div>
+        <div id="copy">Schedule Manager &copy; | All rights reserved</div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>

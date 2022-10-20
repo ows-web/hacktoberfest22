@@ -1,0 +1,76 @@
+@use '../custom' as   * ;
+
+
+.display-2{
+    margin-bottom: 1rem;
+    text-transform: capitalize;
+    font-family: 'Mochiy Pop P One', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+
+
+&--intro{
+    display: inline-block;
+    font-size: 4.87rem;
+    font-weight: 700;
+    color: $black;
+    font-family: 'Mochiy Pop P One', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+}
+&--description{
+    font-size: 1.5rem;
+    display: block;
+    color: $black;
+    margin-top: 1.2rem;
+    text-transform: none;
+}
+}
+
+.heading-line::before{
+    content: "";
+    width: 10rem;
+    height: 0.1rem;
+    display: block;
+    background-color: $primary;
+    margin: 0 auto;
+    }
+    
+    .heading-line::after{
+        content: "";
+        width: 2rem;
+        height: 0.2rem;
+        display: block;
+        background-color: $primary;
+        padding-top:0.5rem;
+        margin-bottom: 1rem;
+        margin: 0 auto;
+        }
+
+        //border right
+
+        .border-right{
+            border-right: 0.1rem solid $gray-300;
+            height: 100%;
+        }
+
+        .display-3{
+            &--title{
+                font-size: 1.8rem;
+                text-transform: capitalize;
+                font-weight: 600;
+                display: inline-block;
+                background-image: linear-gradient(to right , $primary, $secondary) ;
+                -webkit-background-clip: text;
+                -webkit-text-fill-color: transparent;
+
+                @include media-breakpoint-up(lg){
+                    font-size: 2.5rem;
+            }
+            }
+        }
+
+    //    gradient bg
+
+    .gradient{
+        background: linear-gradient(to right ,rgba($primary,0.95),rgba($secondary,0.95));
+
+    }

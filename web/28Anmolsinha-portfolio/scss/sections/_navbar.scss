@@ -1,0 +1,30 @@
+
+@use '../custom' as   * ;
+@use '../components/mixins' as *;
+
+
+.bg-menu {
+@include gradient ;
+
+li{
+    padding: 0 0.75rem;
+
+    a{
+        color: rgb(1, 0, 2) !important;
+        text-transform: capitalize;
+        font-weight: 600;
+}
+
+    }
+
+
+}
+
+.navbar-brand{
+    font-family: 'Mochiy Pop P One', sans-serif;
+    font-size: 2rem;
+    font-weight: 500;
+}
+   
+
+

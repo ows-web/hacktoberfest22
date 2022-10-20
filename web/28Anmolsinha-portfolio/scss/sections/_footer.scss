@@ -1,0 +1,117 @@
+@use '../custom' as *;
+@use '../components/mixins' as *;
+
+.footer{
+    padding-top: 1rem;
+    background-color: $footer;
+}
+
+.contact-box{
+    position: relative;
+
+    &__icons{
+        width: 4rem;
+        stroke: $primary;
+    }
+
+    &__info{
+padding: 0.4rem;
+font-weight: 600;
+
+
+        &--title{
+color: $white;
+text-decoration: none;
+font-size: 1rem;
+        }
+        &--subtitle{
+color: $gray-600;
+text-decoration: none;
+font-size: 1rem;
+        }
+    }
+}
+
+// stytle the social media
+
+.footer-sm{
+
+    a{
+        color: $white;
+
+        &:hover{
+            color: $primary;
+            
+        }
+           
+        i{
+            font-size: 1.8rem;
+            margin-left: 1rem;
+&:hover{
+    transform: scale(1.8);
+}
+         
+            }
+    }
+    }
+
+// style the compoany info content
+
+.company-list{
+    display: block;
+    list-style-type: none;
+    position: relative;
+
+    li{
+        margin-bottom: 0.5rem;
+        text-decoration: none;
+       
+
+        a{
+            color: $white;
+            text-decoration: none;
+            &:hover{
+                color: $primary;
+            }
+        }
+    }
+}
+
+// footer copyright
+
+.footer-bottom{
+    background-color: $black;
+
+    &__copyright{
+        color: $gray-600;
+        font-weight: 500;
+
+
+        a{
+            color: $gray-300;
+        text-decoration: none;
+
+        &:hover{
+            color: $primary;
+            text-decoration: underline;
+        }
+        }
+    }
+}
+
+// style the back to top
+
+.back-to-top{
+    position: fixed;
+    width: 3rem;
+    height: 3rem;
+    right: 1.75rem;
+    bottom: 1.875rem;
+    z-index: 9999;
+
+    i{
+        color: $white;
+        font-size: 1rem;
+        @include absoluteCenter;
+    }
+}

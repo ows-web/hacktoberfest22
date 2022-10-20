@@ -1,0 +1,23 @@
+{
+  "name": "pkp",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass --watch  scss:assets/css "
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "sass": "^1.43.4"
+  },
+  "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.4",
+    "@fortawesome/vue-fontawesome": "^2.0.6",
+    "autoprefixer": "^10.4.2",
+    "bootstrap": "^5.1.3",
+    "font-awesome": "^4.7.0",
+    "glightbox": "^3.1.0",
+    "postcss-cli": "^9.1.0"
+  }
+}

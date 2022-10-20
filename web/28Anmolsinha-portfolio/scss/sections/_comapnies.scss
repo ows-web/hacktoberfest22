@@ -1,0 +1,32 @@
+@use '../custom' as   * ;
+@use '../components/mixins' as *;
+
+
+.comapnies{
+    padding: 0 0 5rem 0;
+
+    &__project-box{
+    height: 13rem;
+     max-width: 100%;
+   margin-bottom: 2rem;
+    padding: 0.2rem;
+    text-align: center;
+    position: relative;
+
+          }
+          img{
+              height: 100%;
+              
+          }
+         
+    }
+
+    .projectbox{
+        &:hover{
+            transform: scale(0.9);
+           
+          }
+    }
+  
+
+

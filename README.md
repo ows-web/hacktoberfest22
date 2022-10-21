@@ -15,7 +15,7 @@ Hacktoberfest
 <a href="https://github.com/SonuKumar81800" aria-label="Follow @SonuKumar81800 on GitHub"><img  src="https://img.shields.io/badge/Follow👉-@SonuKumar81800-blue?style=for-the-badge"  />
 </a>
 <br>
-(Follow me on github - this motivates me to review & merge pull requests quicker.) 
+(Follow me on github - this motivates me to review & merge pull requests quicker.) .
 
 ### Step#3: [Fork](https://github.com/ows-web/hacktoberfest22/fork) and clone the repository.
 

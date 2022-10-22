@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.4/css/all.css" integrity="sha384-DyZ88mC6Up2uqS4h/KRgHuoeGwBcD4Ng9SiP4dIRy0EXTlnuz47vAwmeGwVChigm" crossorigin="anonymous">
+    <meta charset="UTF-8">
+    <meta  http-equix="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Title</title>
+    <link rel="stylesheet" href="style.css">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<body>
+<div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_GB/sdk.js#xfbml=1&version=v12.0" nonce="tIT0s78R"></script>
+    <nav>
+        <div class="navbar">
+            <div class="logo"><a >Pace_Typer.</a></div>
+            <div class="media-icons">
+                <a href=""><i class="fas fa-share-alt "></i></a>
+                <a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=https%3A%2F%2Fdevelopers.facebook.com%2Fdocs%2Fplugins%2F&amp;src=sdkpreparse"><i class="fab fa-facebook fa-2x" data-href="https://developers.facebook.com/docs/plugins/"  ></i></a>
+                <a href="#"><i class="fab fa-github fa-2x"></i></a>
+                <a href="#"><i class="fab fa-instagram fa-2x"></i></a>
+            </div>
+        </ul>
+        </div>
+    </nav>
+<div class="Box">
+    <div class="container1">
+        <div class="heading">
+            Test Your Typing Speed
+        </div>
+        <div class="header">
+            <div class="wpm">
+                <div class="header_text">WPM</div>
+                <div class="curr_wpm">100</div>
+            </div>
+            <div class="cpm">
+                <div class="header_text">CPM</div>
+                <div class="curr_cpm">100</div>
+            </div>
+            <div class="errors">
+                <div class="header_text">Errors</div>
+                <div class="curr_errors">0</div>
+            </div>
+            <div class="timer">
+                <div class="header_text">Time</div>
+                <div class="curr_time">60s</div>
+            </div>
+            <div class="accuracy">
+                <div class="header_text">% Accuracy</div>
+                <div class="curr_accuracy">100</div>
+            </div>
+        </div>
+
+        <div class="quote">
+            Click on the area below to start the game.
+        </div>
+        <textarea class="input_area"
+                  placeholder="start typing here..."
+                  oninput="processCurrentText()"
+                  onfocus="startGame()">
+    </textarea>
+        <button class="restart_btn"
+                onclick="resetValues()">
+            Restart
+        </button>
+
+    </div>
+    <div class="container2">
+        <div class="heading">
+            LEADERBOARD
+        </div>
+        <div class="heading2">
+            TOP-5
+        </div>
+        <!---
+        <div class="wrapper">
+            <div class="lboard_section">
+                <div class="lboard_tabs">
+                    <div class="tabs">
+                        <ul>
+                            <li data-li="today">Today</li>
+                            <li class="active" data-li="month">Month</li>
+                            <li data-li="year">Year</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <div class="lboard_wrap">
+                    <div class="lboard_item today" style="display: none;">
+                        <div class="lboard_mem">
+                            <div class="img">
+                                <img src="pic_1.png" alt="picture_1">
+                            </div>
+                            <div class="name_bar">
+                                <p id="1"><span>1.</span> </p>
+                                <div class="bar_wrap">
+                                    <div class="inner_bar" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="1">
+                            </div>
+                        </div>
+                        <div class="lboard_mem">
+                            <div class="img">
+                                <img src="pic_2.png" alt="picture_2">
+                            </div>
+                            <div class="name_bar">
+                                <p id="2"><span>2.</span></p>
+                                <div class="bar_wrap">
+                                    <div class="inner_bar" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="2">
+
+                            </div>
+                        </div>
+                        <div class="lboard_mem">
+                            <div class="img">
+                                <img src="pic_3.png" alt="picture_2">
+                            </div>
+                            <div class="name_bar">
+                                <p id="'3"><span>3.</span></p>
+                                <div class="bar_wrap">
+                                    <div class="inner_bar" style="width: 60%;"></div>
+                                </div>
+                            </div>
+                            <div class="3">
+
+                            </div>
+                        </div>
+                        <div class="lboard_mem">
+                            <div class="img">
+                                <img src="pic_4.png" alt="picture_1">
+                            </div>
+                            <div class="name_bar">
+                                <p id="4"><span>4.</span></p>
+                                <div class="bar_wrap">
+                                    <div class="inner_bar" style="width: 30%"></div>
+                                </div>
+                            </div>
+                            <div class="4">
+
+                            </div>
+                        </div>
+                        <div class="lboard_mem">
+                            <div class="img">
+                                <img src="pic_5.png" alt="picture_2">
+                            </div>
+                            <div class="name_bar">
+                                <p id="5"><span>5.</span></p>
+                                <div class="bar_wrap">
+                                    <div class="inner_bar" style="width: 10%"></div>
+                                </div>
+                            </div>
+                            <div class="5">
+
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lboard_item month" style="display: block;">
+                        <div class="lboard_mem">
+                            <div class="img">
+                                <img src="pic_2.png" alt="picture_2">
+                            </div>
+                            <div class="name_bar">
+                                <p><span>1.</span> Alex Mike</p>
+                                <div class="bar_wrap">
+                                    <div class="inner_bar" style="width: 95%"></div>
+                                </div>
+                            </div>
+                            <div class="points">
+                                1195 points
+                            </div>
+                        </div>
+                        <div class="lboard_mem">
+                            <div class="img">
+                                <img src="pic_3.png" alt="picture_3">
+                            </div>
+                            <div class="name_bar">
+                                <p><span>2.</span>Johnson</p>
+                                <div class="bar_wrap">
+                                    <div class="inner_bar" style="width: 80%"></div>
+                                </div>
+                            </div>
+                            <div class="points">
+                                1185 points
+                            </div>
+                        </div>
+                        <div class="lboard_mem">
+                            <div class="img">
+                                <img src="pic_1.png" alt="picture_1">
+                            </div>
+                            <div class="name_bar">
+                                <p><span>3.</span>Charles John</p>
+                                <div class="bar_wrap">
+                                    <div class="inner_bar" style="width: 70%;"></div>
+                                </div>
+                            </div>
+                            <div class="points">
+                                1160 points
+                            </div>
+                        </div>
+                        <div class="lboard_mem">
+                            <div class="img">
+                                <img src="pic_5.png" alt="picture_5">
+                            </div>
+                            <div class="name_bar">
+                                <p><span>4.</span>Scarlett Angela</p>
+                                <div class="bar_wrap">
+                                    <div class="inner_bar" style="width: 50%"></div>
+                                </div>
+                            </div>
+                            <div class="points">
+                                1130 points
+                            </div>
+                        </div>
+                        <div class="lboard_mem">
+                            <div class="img">
+                                <img src="pic_4.png" alt="picture_4">
+                            </div>
+                            <div class="name_bar">
+                                <p><span>5.</span>Rosey</p>
+                                <div class="bar_wrap">
+                                    <div class="inner_bar" style="width: 30%"></div>
+                                </div>
+                            </div>
+                            <div class="points">
+                                1110 points
+                            </div>
+                        </div>
+                    </div>
+                    <div class="lboard_item year" style="display: none;">
+                        <div class="lboard_mem">
+                            <div class="img">
+                                <img src="pic_5.png" alt="picture_5">
+                            </div>
+                            <div class="name_bar">
+                                <p><span>1.</span>Scarlett Angela</p>
+                                <div class="bar_wrap">
+                                    <div class="inner_bar" style="width: 90%"></div>
+                                </div>
+                            </div>
+                            <div class="points">
+                                2195 points
+                            </div>
+                        </div>
+                        <div class="lboard_mem">
+                            <div class="img">
+                                <img src="pic_4.png" alt="picture_4">
+                            </div>
+                            <div class="name_bar">
+                                <p><span>2.</span>Rosey</p>
+                                <div class="bar_wrap">
+                                    <div class="inner_bar" style="width: 85%"></div>
+                                </div>
+                            </div>
+                            <div class="points">
+                                2185 points
+                            </div>
+                        </div>
+                        <div class="lboard_mem">
+                            <div class="img">
+                                <img src="pic_3.png" alt="picture_3">
+                            </div>
+                            <div class="name_bar">
+                                <p><span>3.</span>Johnson</p>
+                                <div class="bar_wrap">
+                                    <div class="inner_bar" style="width: 65%;"></div>
+                                </div>
+                            </div>
+                            <div class="points">
+                                2160 points
+                            </div>
+                        </div>
+                        <div class="lboard_mem">
+                            <div class="img">
+                                <img src="pic_1.png" alt="picture_1">
+                            </div>
+                            <div class="name_bar">
+                                <p><span>4.</span>Charles John</p>
+                                <div class="bar_wrap">
+                                    <div class="inner_bar" style="width: 30%"></div>
+                                </div>
+                            </div>
+                            <div class="points">
+                                2130 points
+                            </div>
+                        </div>
+                        <div class="lboard_mem">
+                            <div class="img">
+                                <img src="pic_2.png" alt="picture_2">
+                            </div>
+                            <div class="name_bar">
+                                <p><span>5.</span>Alex Mike</p>
+                                <div class="bar_wrap">
+                                    <div class="inner_bar" style="width: 10%"></div>
+                                </div>
+                            </div>
+                            <div class="points">
+                                2110 points
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            </div>--->
+        <div id="leaderboard" class="container">
+            <!-- scores will be inserted by the script here -->
+        </div>
+        <button onclick="randomize()">Randomize</button>
+        <script src="script.js"></script>
+
+        </div>
+</div>
+<script  src="script.js"></script>
+
+</body>
+</html>

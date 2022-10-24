@@ -1,0 +1,46 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #191919;
+}
+
+.sliders{
+    width: 80vw;
+    height: 500px;
+    position: relative;
+    border: 5px solid rgb(18, 196, 228);
+    overflow: hidden;
+
+}
+.sliders >img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: .3s;
+}
+
+.sliders span{
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 48px;
+    color: rgb(18, 196, 228);
+    cursor: pointer;
+}
+.sliders span:last-of-type{
+    right: 20px;
+}
+.sliders span:first-of-type{
+    left: 20px;
+}

@@ -1,0 +1,8 @@
+body{
+    background-color: rgb(148, 143, 9);
+}
+
+#canvas{
+    margin-left: 300px;
+    margin-top: 50px;
+}

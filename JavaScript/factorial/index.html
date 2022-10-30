@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Factorial</title>
+</head>
+<body>
+    <input type="text" id="factNum" />
+    <button id="runFactorial">Run</button>
+    <br>
+    <span id="result">Result:</span>
+</body>
+<script>
+    const factorial = (n)=>{
+        let res = 1;
+        while(n>0){
+            res*=n;
+            n-=1;
+        }
+        if(isNaN(parseInt(n))){
+            res = "Please type a number"
+        }
+        return res;
+    }
+    document.getElementById('runFactorial').addEventListener('click',()=>{
+        document.getElementById('result').innerHTML = 'Result: '+factorial(parseInt(document.getElementById('factNum').value))
+    })
+</script>
+</html>
